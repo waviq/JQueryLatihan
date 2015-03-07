@@ -1,0 +1,77 @@
+JQUERY TUTORIAL 
+
+1.	jQuery Selectors
+	
+	Selector                Example                        Select
+
+	*                       $('*')                         Menandakan untuk semua element yang di select
+	#id                     $('#lastName')                 Mengambil element berdasarkan ID yg ada d HTML File
+	.class                  $('.intro')                    Mengambil element semua yang ada di class 'intro'
+	.class,.class           $('.intro,.demo')              Mengambil element semua yang ada di class'intro'
+														   atau class 'demo'
+	element                 $('p')						   Mengambil semua element <p> atau paragraph
+	el1,el2,el3             $('h1,div,p')                  Mengambil semua element yang mengandung <h1>, <div>
+	                                                       dan <p> element
+	:first                  $('p:first')                   Mengambil elemen paragraph yang PERTAMA, dari
+														   berbagai macam paragraph yang ada
+	:last                   $('p:last')                    Mengambil elemen paragraph yang TERAKHIR, dari
+														   berbagai macam paragraph yang ada
+	:event					$('tr:even')                   Mengambil semua element yg mengandung<tr> dari html
+	:odd					$('tr:odd')                    Mengambil element dengan index yg lompat-lompat 
+	                                                       (contoh: index ke : 1,3,5,7, dll).
+	                                                       Dalam contoh d atas, brarti mengambil element di tabel yang mengandung <tr> dg ketentuan lompat2 select datanya
+	:first-child            $('p:first-child')			   Mengambil semua element dari 'anak' pertama dari
+	                                                       'parent atau orangtua'
+	                                                       Contoh: dari ada 2 <div> yang masing2 <div> punya 5 <p> atau punya 5 paragraph, maka yang akan di ambil adalah anak/paragpraph pertama dari masing2 <div> yang ada
+	:first-of-type			$('p:first-of-type')		   Mengambil element ('anak') yang PERTAMA paragraph 
+	                                                       dari berbagai macam tipe 'perent'
+	:last-child				$('p:last-child')              Mengambil element paragraph yang terakhir dari
+	                                                       masing-masing 'parent' nya
+	:last-of-type           $('p:last-of-type')            Mengambil semua type element paragraph yang 
+	                                                       terakhir dari masing-masing 'parent' nya
+	:nth-child(n)           $('p:nth-child(2)')            Mengambil semua element paragraph anak ke-2(n=2)
+														   dari masing-masing 'parent' nya
+	:nth-last-child(n)		$('p:nth-last-child(2)')	   Mengambil <p> element urutan ke-2(n=2) d hitung 
+														   dari urutan paling bawah ngitung e (last) dari masing-masing 'parent' nya
+	:eq(index)				$('ul li:eq(3)')			   empet element dari list yang ada (d mulai dr index 
+														   ke 0) d contoh n= 3, maka klo dr 0 ada 4
+	:not(selector)			$('input:not(:empty)')		   Mengambil semua input element yang tidak kosong
+	:header					$(':header')				   Mengambil element dari semua element header<h1,dll>
+	:animated				$(':animated')				   Mengambil animated elements
+	:focus					$('focus')					   Mengambil/select element yang berkaitan dengan
+														   focus mouse event							   
+	:contains(text)			$(':contains("Hello")')		   Mengambil element yang mengandung text 'Hello'
+	:has(selector)			$('div:has(p)')				   Mengambil element <div> yang mempunyai <p> element
+	:empty					$(':empty')					   Mengambil element yang kosong, bisa jg d pake 
+														   sebagai event handler
+	:parent					$(':parent')				   All elements that are a parent of another element
+	:hidden					$('p:hidden')				   Mengambil semua hidden <p> element
+	:visible				$('table:visible')			   Semua visuble tabel
+	:root					$(':root')					   Mengambil dokument d root element, biasane d 
+														   gabungkan dengan css
+	:lang(language)			$("p:lang(de)")				   Mengambil semua <p> element dengan atribut nilai 
+														   dengan inisial 'de'
+	[attribute]				$('[href]')					   Mengambil semua element dengan atribut <href>
+	:input					$(':input')					   Mengambil semua input elements
+	:text					$(':text')					   Mengambil semua input element dengan type:'text'	
+	:password				$(':password')				   Mengambil input element dengan type:'password'	
+	:radio					$(':radio')					   Mengambil input element dengan type:'radio'
+	:checkbox				$(':checkbox')				   Mengambil element dengan type:'checkbox'
+	:submit					$(':submit')				   Mengambil input type element:'submit'			
+	:reset					$(':reset')					   Mengambil input element type:'reset'		
+	:button					$(':button')				   Mengambil input element type:'button'
+	:image					$(':image')					   Mengambil input element type:'image'
+	:File					$(':file')					   Mengambil input element type:'file'
+	:enable					$(':enable')				   Mengambil 'enable' input element
+	:disabled				$(':disable')				   All disabled input elements
+	:selected				$(':selected')				   All selected input elements
+	:checked				$(':checked')				   All checked input elements
+
+
+
+
+
+
+
+
+
